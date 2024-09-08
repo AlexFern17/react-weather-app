@@ -34,12 +34,39 @@ export default function App() {
   return (
     <div className="App">
       <h1>Weather App</h1>
-      <form onSubmit={handleSubmit}>
+      <form className="searchInput" onSubmit={handleSubmit}>
         <input type="text" placeholder="City" onChange={updateCity} />
         <input type="submit" value="Search" />
       </form>
       <br />
       <div className="response">{message}</div>
+      <div className="footNote">
+        This page was coded by{" "}
+        <a
+          href="https://github.com/AlexFern17"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Alejandra Fernandez{" "}
+        </a>
+        and is open-sourced on{" "}
+        <a
+          href="https://github.com/AlexFern17/react-weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub{" "}
+        </a>
+        and hosted by{" "}
+        <a
+          href="https://app.netlify.com/teams/alexfern17/overview"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netifly
+        </a>
+        .
+      </div>
     </div>
   );
 }
