@@ -37,4 +37,7 @@
       "last 1 safari version"
     ]
   }
+  "resolutions": {
+  "axios": "^1.7.7"
+}
 }
